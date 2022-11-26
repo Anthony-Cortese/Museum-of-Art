@@ -1,5 +1,5 @@
 import React, { MutableRefObject, useRef } from "react";
-// import Header from "../components/Header";
+import Header from "../components/Header";
 import Home from "../components/Home";
 
 const HomePage = () => {
@@ -7,7 +7,7 @@ const HomePage = () => {
 
 	return (
 		<div className="App">
-			{/* <Header homeRef={homeRef} /> */}
+			<Header homeRef={homeRef} />
 			<Home homeRef={homeRef} />
 		</div>
 	);

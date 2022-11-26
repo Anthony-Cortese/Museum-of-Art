@@ -2,10 +2,12 @@ import { configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
 import {TypedUseSelectorHook, useDispatch, useSelector } from "react-redux"
 import { artistData } from "../artistData";
 import artistReducer from "../features/artistSlice"
+import userReducer from "../features/userSlice"
 
 export const store = configureStore({
     reducer: {
-        artist: artistReducer
+        artist: artistReducer,
+        user: userReducer,
     },
     middleware: (getDefaultMiddleware) => 
     getDefaultMiddleware({

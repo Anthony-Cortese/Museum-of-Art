@@ -4,6 +4,7 @@ import { Fade } from "react-awesome-reveal";
 import { useDispatch } from "react-redux";
 import { selectArtwork } from "../features/artistSlice";
 import { useAppDispatch, useAppSelector } from "../app/store";
+import "./styles.css"
 
 interface SectionInterface {
     id: number;
@@ -22,9 +23,10 @@ interface SectionInterface {
         <Wrap ref={myRef} bgImage={props.backgroundImg}>
            <Fade direction="up">
               <ItemSet>
-                 <h1 className="text-4xl font-bold text-black">{props.artist}</h1>
-                 <p>{props.biography}</p>
+                 <h1 className="artist-font">{props.artist}</h1>
+                 
               </ItemSet>
+              <p>{props.biography}</p>
            </Fade>
            <Buttons>
               <Fade direction="up">
@@ -78,6 +80,7 @@ const Wrap = styled.div`
 const ItemSet = styled.div`
    padding-top: 15vh;
    test-align: center;
+   font-size: 5rem
 `;
 
 const ButtonGroup = styled.div`

@@ -1,9 +1,11 @@
+
+
 export const artistData = [
     {
        id: 1,
        artist: "Vincent Van Gogh",
        painting: "Vase with fifteen flowers",
-       backgroundImg: "#92BCD2",
+       backgroundImg: "VanGogh.jpeg",
        biography:
           "It has been stated that Van Gogh’s purpose for this painting was to serve as decor for his home in hope of a visit from fellow artist, Gauguin.",
        price: 84200000,
@@ -22,7 +24,7 @@ export const artistData = [
        id: 2,
        artist: "Edvard Munch",
        painting: "The Scream",
-       backgroundImg: "#92BCD2",
+       backgroundImg: "edvard.jpeg",
        biography:
           "The Scream is part of a series known as “The Frieze of Life,” which depicts highly charged, affective moments related to themes of life, mysticism, love, and death--  the actual mental image of the existential angst of civilized man.",
        price: 120000000,
@@ -42,7 +44,7 @@ export const artistData = [
        id: 3,
        artist: "Jackson Pollack",
        painting: "No. 5, 1948",
-       backgroundImg: "#92BCD2",
+       backgroundImg: "jackson.png",
        price: 140000000,
        inStock: false,
        biography:
@@ -63,7 +65,7 @@ export const artistData = [
       painting: "San Giorgio Maggiore at Dusk",
        biography:
           "It depicts mysterious buildings that seem to magically appear from the surrounding landscape, they almost seem to float in the background. The forms are gently inserted, though not enough to disguise their identity. The painting focuses on the Church of San Giorgio Maggiore with its bell tower rising to the top of the painting. To the right are the faintly visible domes of Santa Maria della Salute and the mouth of the Grand Canal.",
-       backgroundImg: "model-3.jpg",
+       backgroundImg: "monet.png",
        price: 100000000,
        inStock: true,
  
