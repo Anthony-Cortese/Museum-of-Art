@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { Fade } from "react-awesome-reveal";
 import { useDispatch } from "react-redux";
@@ -31,12 +32,12 @@ interface SectionInterface {
            <Buttons>
               <Fade direction="up">
                  <ButtonGroup>
-                    {/* <Link to={`/cars/${props.id}`}> */}
+                    <Link to={`/painting/${props.id}`}>
                        <LeftButton className=" hover:animate-bounce ">
                           Custom Order
                        </LeftButton>
-                    {/* </Link>
-                    <Link to="/cart"> */}
+                    </Link>
+                    {/* <Link to="/cart"> */}
                        <RightButton className="hover:animate-bounce ">
                           Existing Inventory
                        </RightButton>

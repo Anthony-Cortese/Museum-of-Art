@@ -34,11 +34,20 @@ interface ArtworkState {
     reducers: {
         setTotal: (state, action) => {
             state.total = action.payload
+        },
+
+        addToCart: (state, action) => {
+         let art = state.cart.find((item) => {
+            return item.id === action.payload
+         });
+         if (art) return;
+         let [_art] = state.artist.filter((item) => item.id === action.payload)
+         state.cart = [...state.cart, _art]
         }
     }
  })
 
- export const { setTotal } =
+ export const { setTotal, addToCart } =
    artistSlice.actions;
 export const selectArtwork = (state: RootState) => state.artist;
 
