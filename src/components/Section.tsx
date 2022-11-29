@@ -10,7 +10,6 @@ import "./styles.css"
 interface SectionInterface {
     id: number;
     artist: string;
-    biography: string;
     backgroundImg: string;
     homeRef: React.RefObject<HTMLDivElement>;
  }
@@ -27,7 +26,7 @@ interface SectionInterface {
                  <h1 className="artist-font">{props.artist}</h1>
                  
               </ItemSet>
-              <p>{props.biography}</p>
+              {/* <p>{props.biography}</p> */}
            </Fade>
            <Buttons>
               <Fade direction="up">

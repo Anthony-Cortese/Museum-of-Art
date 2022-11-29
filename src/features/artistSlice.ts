@@ -12,6 +12,7 @@ interface ArtworkState {
  type Painting = {
     id: number;
     artist: string;
+    last: string;
     painting: string;
     inStock: boolean;
     biography: string;

@@ -8,6 +8,7 @@ import { useCartState } from "../hooks/useReducerState";
 import { FaOpencart } from "react-icons/fa";
 import { useAppSelector } from "../app/store";
 import { setLogout } from "../features/userSlice";
+import "./styles.css"
 
 
 interface HeaderInterface {
@@ -32,7 +33,7 @@ interface HeaderInterface {
           <Menu className="flex gap-2">
              {artists.artist.map((art) => (
                 <h1
-                   className="text-black bg-transparent rounded-lg px-2.5 py-1.5 hover:text-white hover:bg-gray-800 cursor-pointer hover:bg-opacity-30 transition-colors"
+                   className="menu-font"
                    onClick={() => {
                       homeRef
                          ? homeRef.current?.scrollTo({
@@ -43,7 +44,7 @@ interface HeaderInterface {
                    }}
                    key={art.id}
                 >
-                   {art.artist}
+                   {art.last}
                 </h1>
              ))}
           </Menu>
@@ -111,7 +112,7 @@ interface HeaderInterface {
                          }}
                          key={art.id}
                       >
-                         <h1> {art.title}</h1>
+                         <h1> {art.last}</h1>
                       </li>
                    ))}
              </ul>
@@ -139,6 +140,10 @@ interface HeaderInterface {
     justify-content: center;
     align-items: center;
     flex: 1;
+    h1 {
+      font-size: 16px;
+      font-weight: 600;
+   }
     @media (max-width: 768px) {
        display: none;
     }

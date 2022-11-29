@@ -20,7 +20,6 @@ function Home(props: HomeInterface) {
             key={art.id}
             id={art.id}
             artist={art.artist}
-            biography={art.biography}
             backgroundImg={art.backgroundImg} />
            ))}
         </Container>

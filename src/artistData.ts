@@ -4,6 +4,7 @@ export const artistData = [
     {
        id: 1,
        artist: "Vincent Van Gogh",
+       last: "Van Gogh",
        painting: "Vase with fifteen flowers",
        image: "vase.jpeg",
        backgroundImg: "VanGogh.jpeg",
@@ -24,6 +25,7 @@ export const artistData = [
     {
        id: 2,
        artist: "Edvard Munch",
+       last: "Munch",
        painting: "The Scream",
        image: "scream.jpeg",
        backgroundImg: "edvard.jpeg",
@@ -35,7 +37,7 @@ export const artistData = [
           "1895",
           "Tempera and pastels on cardboard",
           "35.75 x 29",
-          "Private Hands",
+          "Private Collection",
  
           "$120 million",
        ],
@@ -45,6 +47,7 @@ export const artistData = [
     {
        id: 3,
        artist: "Jackson Pollack",
+       last: "Pollack",
        painting: "No. 5, 1948",
        image: "no5.jpeg",
        backgroundImg: "jackson.png",
@@ -65,6 +68,7 @@ export const artistData = [
     {
        id: 4,
        artist: "Claude Monet",
+       last: "Monet",
       painting: "San Giorgio Maggiore at Dusk",
       image: "saint.jpeg",
        biography:
