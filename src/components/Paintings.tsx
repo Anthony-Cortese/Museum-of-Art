@@ -34,18 +34,7 @@ return (
                       className="painting"
                    />
                    </div>
-                   <div className="border-t border-gray-200 mt-10 pt-10">
-                   <h3 className="heading">
-                      Highlights
-                   </h3>
-                   <div className="highlights">
-                      <p className="list">
-                         {painting.highlights.map((highlight) => (
-                            <p key={highlight}>{highlight}</p>
-                         ))}
-                      </p>
-                   </div>
-                </div>
+                  
                 </div>
          
 
@@ -100,6 +89,18 @@ return (
                    >
                       Add to cart
                    </button>
+                </div>
+                <div className="border-t border-gray-200 mt-10 pt-10">
+                   <h3 className="heading">
+                      Highlights
+                   </h3>
+                   <div className="highlights">
+                      <p className="list">
+                         {painting.highlights.map((highlight) => (
+                            <p key={highlight}>{highlight}</p>
+                         ))}
+                      </p>
+                   </div>
                 </div>
 
                

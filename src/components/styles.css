@@ -10,16 +10,16 @@
 
 	display: flex;
 	flex-direction: row;
-	height: 100vh;
+	height: 100%;
 	justify-content: center;
 }
 
 .painting-img {
-	border: 1px solid red;
+	/* border: 1px solid red; */
 	/* margin-top: 5rem; */
-	min-height: 	100%;
-	width: 50%;
-	object-fit:cover;
+	height: 80%;
+	width: 60%;
+	object-fit: fill;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -27,9 +27,9 @@
 }
 
 .frame {
-	margin-top: 2rem;
+	margin-top: 5rem;
 	height: auto;
-	width: 33vw;
+	width: 38vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -48,11 +48,12 @@
 }
 
 .product-div {
-	width: 40%;
+	width: 50%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: left;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .product-info {
@@ -66,7 +67,7 @@
 }
 
 .heading {
-	font-size: 2vw;
+	font-size: 1vw;
 	padding: .5rem;
 }
 
@@ -80,6 +81,7 @@ p {
 }
 
 .highlights {
+	font-size: .8vw;
 	padding: .2rem;
 }
 
