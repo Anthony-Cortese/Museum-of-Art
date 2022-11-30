@@ -1,7 +1,24 @@
 
 
 export const artistData = [
-    {
+   {
+      id: 0,
+      artist: "",
+      last: "",
+      painting: "",
+      image: "",
+      backgroundImg: "museum.png",
+      biography:
+         "",
+      price: 0,
+      inStock: true,
+      highlights: [
+      
+      ],
+      quantity: 1,
+      ref: null,
+   },
+   {
        id: 1,
        artist: "Vincent Van Gogh",
        last: "Van Gogh",
@@ -73,7 +90,7 @@ export const artistData = [
       image: "saint.jpeg",
        biography:
           "It depicts mysterious buildings that seem to magically appear from the surrounding landscape, they almost seem to float in the background. The forms are gently inserted, though not enough to disguise their identity. The painting focuses on the Church of San Giorgio Maggiore with its bell tower rising to the top of the painting. To the right are the faintly visible domes of Santa Maria della Salute and the mouth of the Grand Canal.",
-       backgroundImg: "monet.png",
+       backgroundImg: "monet1.png",
        price: 100000000,
        inStock: true,
  
@@ -87,4 +104,27 @@ export const artistData = [
        quantity: 1,
        ref: null,
     },
+    {
+      id: 5,
+      artist: "H.R. Giger",
+      last: "Giger",
+     painting: "Necronom IV",
+     image: "download.png",
+      biography:
+      "Chances are, H.R. Giger has given you a nightmare. The Swiss-born painter was responsible for creating one of the most iconic monsters in the history of the human imagination: the xenomorph, the unrelenting alien species that oozes at the center of the Alien film franchise.",
+      backgroundImg: "giger.jpeg",
+      price: 1000000,
+      inStock: true,
+
+      highlights: [
+         "1976",
+         "Acrylic on Wood and paper",
+         "100 cm × 150 cm",
+         "Giguer Museum in the Castle of Saint-Germain, Gruyere, Switzerland",
+         "Donated to his Museum",
+      ],
+      quantity: 1,
+      ref: null,
+   },
+
  ];

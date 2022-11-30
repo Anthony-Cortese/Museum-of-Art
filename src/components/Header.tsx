@@ -28,7 +28,7 @@ interface HeaderInterface {
     return (
        <Container className={bgColor ? bgColor : ""}>
           <Link to="/">
-             <img src="/images/logo.svg"></img>
+             <img className="spin" src="https://i.ibb.co/vchsJQ0/Untitled.png" alt="spin"></img>
           </Link>
           <Menu className="flex gap-2">
              {artists.artist.map((art) => (

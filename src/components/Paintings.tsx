@@ -12,7 +12,7 @@ interface PaintingDetailInterface {
 }
 
 export default function PaintingDetail() {
-    const {id} = useParams();
+    const { id } = useParams();
     const [painting] = artistData.filter((art) => art.id === parseInt(id ?? "" ))
     const dispatch = useDispatch();
 

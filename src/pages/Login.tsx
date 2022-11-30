@@ -1,6 +1,6 @@
 import React, { useState, BaseSyntheticEvent } from "react";
 // Import the functions you need from the SDKs you need
-
+import "./styles.css"
 import { Link, useNavigate } from "react-router-dom";
 import {
    getAuth,
@@ -76,12 +76,12 @@ export default function LoginPage() {
 
    return (
       <>
-         <div className="min-h-full flex flex-col justify-center py-12 sm:px-6 lg:px-8">
-            <div className="sm:mx-auto sm:w-full sm:max-w-md">
+         <div className="register-div">
+            <div className="reg">
                <Link to="/">
                   <img src="/images/logo.svg" className="mx-auto w-32"></img>
                </Link>
-               <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
+               <h2 className="title">
                   Sign in to your account
                </h2>
                <div className="mt-2 text-center text-sm text-gray-600">
@@ -95,11 +95,11 @@ export default function LoginPage() {
             </div>
 
             <form
-               className="mt-8 sm:mx-auto sm:w-full sm:max-w-md"
+               className="form"
                onSubmit={login}
             >
-               <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
-                  <div className="space-y-6">
+               <div className="main-reg">
+                  <div className="label-reg">
                      <div>
                         <label
                            htmlFor="email"
@@ -141,8 +141,8 @@ export default function LoginPage() {
                         </div>
                      </div>
 
-                     <div className="flex items-center justify-between">
-                        <div className="flex items-center">
+                     <div className="remember">
+                        <div className="remember1">
                            <input
                               id="remember-me"
                               name="remember-me"
@@ -169,7 +169,7 @@ export default function LoginPage() {
                      <div>
                         <button
                            type="submit"
-                           className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                           className="button"
                         >
                            Sign in
                         </button>
@@ -192,12 +192,10 @@ export default function LoginPage() {
                         <div>
                            <button
                               onClick={() => loginWithGoogle()}
-                              className="w-full inline-flex justify-center  py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
+                              className="google-button"
                            >
-                              <span className="sr-only">
-                                 Sign in with Google
-                              </span>
-                              <FcGoogle className="h-8 w-8 " />
+                              
+                              <FcGoogle className="google" />
                            </button>
                         </div>
                      </div>

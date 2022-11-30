@@ -5,6 +5,10 @@
 	background-image: url('https://s3.amazonaws.com/usefulangle/news/95-5f6cc1ad5575e.jpg');
 }
 
+.spin {
+	height: 2rem;
+}
+
 .main-div {
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
@@ -17,8 +21,8 @@
 .painting-img {
 	/* border: 1px solid red; */
 	/* margin-top: 5rem; */
-	height: 80%;
-	width: 60%;
+	height: auto;
+	min-width: 50vw;
 	object-fit: fill;
 	display: flex;
 	flex-direction: column;
@@ -48,6 +52,7 @@
 }
 
 .product-div {
+	min-height: auto;
 	width: 50%;
 	display: flex;
 	flex-direction: column;
@@ -57,7 +62,7 @@
 }
 
 .product-info {
-	height: 80%;
+	height: 60%;
 	
 }
 
@@ -93,7 +98,7 @@ p {
 	.main-div {
 		display: flex;
 		flex-direction: column;
-		height: 100%;
+		height: auto;
 		justify-content: center;
 		align-items: center
 	
@@ -101,7 +106,7 @@ p {
 
 	.painting-img {
 		margin-top: 5rem;
-		min-height: 50vh;
+		height: auto;
 		width: 60vw;
 	
 	}
@@ -109,6 +114,7 @@ p {
 	.frame {
 		height: auto;
 	width: 48vw;
+	margin: 0;
 	}
 
 	.product-div {

@@ -80,7 +80,7 @@ const Wrap = styled.div`
 const ItemSet = styled.div`
    padding-top: 15vh;
    test-align: center;
-   font-size: 5rem
+   font-size: 4.8vw
 `;
 
 const ButtonGroup = styled.div`
